@@ -1,8 +1,8 @@
-/**{
+*{
 	margin:0;
 	padding:0;
-}*/
-body{
+}
+.style-1{
 	background-color:666666;
 	color:#555555;
 	font-family:Arial,Helvetica,sans-seriff;
@@ -10,71 +10,81 @@ body{
 	font-weight:normal;
 	/*
 	font:normal 16px Arial,Helvetica,sans-seriff;*/
-	
-	line-height:1.6em;
-	}
-a{
-		text-decoration:none;
-		color:#000;
-		
-		
-	}
-a:hover{
-		color:red;
-	}
-a:active{
-		color:green;
-	}
- a:visited{
-		color:black;
-	}
-.container{
-		width:90%;
-		margin:auto;
-	}
-.box-1{
-	background-color:#333;
-	color:#fff;
-	border:5px red solid;
-	border-width:3px;
-	border-bottom-width:10px;
-	border-top-style:dotted;
-
-	padding:20px;
-	margin:20px;
-}	
-.box-1 h1{
-	font-family:Tahoma;
-	font-weight:800;
-	font-style:italic;
-	text-decoration:underline;
-	text-transform:uppercase;
-	letter-spacing:2em;
-	word-spacing:1.5em;
 }
-.box-2{
-		border:3px dotted #ccc;
-		padding:20px;
-		margin:20px 0;
+.style-2{
+	text-shadow:2px 2px 5px #35eea4;
+	border:none;
+	font-family:sans-seriff;
+	font-weight:bolder;
+	padding:30vh 15vw 36vh 15vw;
+	background-color:black;
+	font-size:25px;
+	color:white;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:2.5em;
+	letter-spacing:2px;
+}
+
+.about{
+	text-shadow:4px 4px 4px #d6c2d6;
+	display:flex;
+	flex-direction:row;
+    padding:30vh 0 40vh 10vw;
+	width:80%;
+	align-items:left-side;
+	line-height:2em;
+	letter-spacing:1px;
+}
+
+	
+.image{
+
+	box-shadow:4px 4px 4px 2px 	#4d334d;
+}
+.tech{
+	
+	background-color:#00ffff;
+	padding:23vh 0 20vh 10vw;
+	text-transform:uppercase;
+
+
+}
+.move{
+	display:flex;
+	flex-wrap:wrap;
+}
+	
+.icon{
+	padding-right:15vw;
+	padding-top:5vh;
+	width:15%;
+
+}
+
+.work{
+	padding:55vh 10vw 45vh 10vw;
+	font:normal 25px Comic Sans MS;
+	background-color:#ffe6e6;
+}
+
+
+@media only screen and (max-width:765px)
+{
+	.move{
+		order:-1;
+		flex-direction:column;
+		width:90vw;
 	}
-	.categories{
-		border:1px #ccc solid;
-		padding:20px;
-		border-radius:15px;
-		
-	}
-	.categories h2{
-		text-align:center;
-		
-	}
-	.categories ul{
-		padding:0;
-		padding-left:20px;
-		list-style:square;
-		list-style:none;
-	}
-.categories li{
-	padding-bottom:6px;
-	border-bottom:dotted 1px #333;
-	list-style-image:url('../image/checkbox.png');
-}	
+	.about  {
+        flex-direction: column;
+    }
+	
+    .about .image {
+        order: -1;
+    }
+    .about .image{
+        width: 60vw;
+		font-size:24px;
+    }
+}
